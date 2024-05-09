@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciel - There is no coming back!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mate:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+        <a href="index.html"><img src="./Images/Screenshot_20240428-183828_WhatsApp.jpg" width="100px"></a>
+           <div class="navlinks" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./communities.html"> JOIN COMMUNITIES</a></li>
+                <li><a href="./signin.html"> SIGN IN</a></li>
+                <li><a href="./createaccount.html">CREATE ACCOUNT</a></li>
+            </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showmenu()"></i>
+        </nav>
+    </header>
+    <Section class="homepage">
+        <h1 style="color:orange"> <i>Welcome!</i> </h1>
+        <p class="pheader" style="text-align: center;
+        font-weight: bold;"> <i> Join <span class="span1">Ciel</span>, meet people with similar interest, play, and grow together!</i></p>
+
+    </Section>
+
+
+
+
+
+    <!-----Main content---->
+
+    <section class="main">
+        <h1 class="insideciel"> INSIDE <i>Ciel!</i></h1>
+        <div class="content">
+        <div class="firstrow">
+            <img class="img left" src="./Images/what is happening.png">
+            
+            
+            <h2 class="h2content"> Keep up with what's happening in your area</h2>
+            <p class="pcontent">Hear the latest news and announcements from your town of residence, together with otheer areas of your
+                 choosing.</p>
+                 <br>
+            </div>
+        <div class="secondrow">
+            <img class="img right" src="./Images/share your thoughts.png">
+            <h2 class="h2content"> Share your thoughts and opportunities with neighbours</h2>
+            <p class="pcontent"> Create posts for your respective area of residence, it could be anything from personal opinions to
+                 product advertisements.</p>
+                 <br>
+        </div>
+        <div class="thirdrow">
+            <img class="img center" src="./Images/connect with people.jfif">
+            <h2 class="h2content" style="margin-left: 0px;"> Connect with others who live near you</h2>
+            <p class="pcontent"style="margin-left: 0px;"> Personalized profiles allow you to find people with similar interest and link up.</p>
+            <br>
+        
+        </div>
+        </div>
+    </section>
+
+
+
+    
+    <!-------signup--->
+
+    <section class="Register">
+        <h2 style="margin:50px; text-align: center; font-size: 60px;"> Join<i> Ciel</i></h2>
+        <div class="register">
+            <a class="aregister" href="createaccount.html"> Register</a>
+            <a class="aregister" href="signin.html"> Sign In</a>
+        </div>
+    </section>
+
+<!------footer---->
+
+<section class="footer">
+    <footer>
+        <p>&copy;2023 Ciel. All right reserved.</p>
+        <a class="afooter" href="about.html">
+            About
+        </a>
+        <a class="afooter" href="contact.html">
+            Contact
+        </a>
+    </footer>
+</section>
+
+
+
+<!----Javascript toggle menu----->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right="0";
+    }
+
+        function hidemenu(){
+            navlinks.style.right="-200px";
+        }
+    
+</script>
+
+</body>
+</html>
